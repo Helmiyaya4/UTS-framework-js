@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+   -Compatible" ::content="IE
+   =edge">
+   <meta name="viewport" ::content
+   ="width=device-width, inital
+   -scale=1.0">
+   <title>Document</title>
+   <style>
+   body{
+    background-color: ::-moz-range-thumb
+    (104, 17, 185);
+   }
+        .container{
+            width: 415px;
+            border: 1px solid black
+            ;
+            height: auto;
+            border: none;
+            border-top: 10px solid 
+             rbg(250, 246, 246);
+             border-bottom: 10px
+             solid rbg(250, 246, 246);;
+ }
+ .display-cover{
+    display: inline-block;
+    background: rbg(250, 246, 246);;
+    width: 415px;
+    height: 110px;
+    border: none;
+    outline: none;
+    border-top: 8px solid rbg(250, 246, 246);;
+ }
+ #display{
+    color: black;
+    font-size: 25px;
+    font-family: monospace;
+    text-align: right;
+    width: 330px;
+    height: 100px;
+    background: rbg(197, 231, 343);
+ }
+ #clearScreen{
+    height: 104px;
+    width: 77px;
+    outline: none;
+    border: none;
+    background-color:rgb(red, green, blue) (201, 15, 15);
+    font-size: 25px;
+    font-weight: bold ;
+    border-radius: 5px;
+ }
+ #clearScreen:hover,
+ #equalTo:hover{
+    background-color:white ;
+    transition: 0.3s ease -in;
+ }
+ .calculator-button{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+    background: rgb(250, 246, 246);
+ }
+ .first-button-btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin-top: 8px ;
+    font-size: 40px ;
+    font-weight: bolder ;
+    font-family:monospace ;
+ }
+ .first-button-btn:hover{
+    background-color: rgb(238, 238, 195);
+    transition: 0,3s ease-in ;
+ }
+ /*special button style*/
+ #aqualTo{
+    background-color: rgb(201, 15, 15);
+ }
+ .yellow{
+    background-color: rgb(240, 240, 11);
+ }
+ .container{
+    width: 425px;
+    height: auto;
+    <head>
+    <body>
+    <div class="container">
+    <!--Display of the calculator-->
+    <div class="name"><h3>Helmi,S Calculator</h3></div>
+    <div class="display-cover">
+    <input type="text" id="display" placeholder="0" maxlength="29">
+    <input type="button" value="AC" id="clearScreen" onclick="clearScreen()">
+    </div>
+    <div class="calculator-button">
+    <--1st button-->
+    <div class="firs-button"><input class="firs-button-btn" type="button" value="1" onclick="show('1')"></div>
+    <div class="first-button"><input class="first-button-btn" type="button" value="1" onclick="show('1')"></div>
+    <div class="first-button"><input class="first-button-btn" type="button" value="2"onclick="show('2')"></div>
+    <div class="first-button"><input class="first-button-btn" type="button" value="3"onclick="show('3')"></div>
+    <div class="first-button"><input class="first-button-btn" yellow" type="button" value="+"onclick="show('+')"></div>
+    <!--2nd button-->
+    <div class="first-button"><input class="first-button-btn" type="button" value="4"onclick="show('4')"></div>
+    <div class="first-button"><input class="first-button-btn" type="button" value="5"onclick="show('5')"></div>
+    <div class="first-button"><input class="first-button-btn" type="button" value="6"onclick="show('6')"></div>
+   </div>
+   
+   
+   <script>
+   function clearScreen(){
+    document.getElementById("display").value +=value;
+   };
+     function show(value) {
+        document.getElementById("display").value +=value;
+     };
+     function calculate(){
+        var p = document.getElementById("display").value;
+        var q = eval(p);
+        document.getElementById("display").value =q;
+     };
+
+    </script>
+</body>
+</html>
